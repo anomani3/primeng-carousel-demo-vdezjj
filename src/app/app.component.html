@@ -27,5 +27,12 @@
         </div>
       </div>
     </div>
+    
+    <span
+    [class]="
+      'product-badge status-' + product.inventoryStatus.toLowerCase()
+    "
+    >{{ product.inventoryStatus }}</span
+  >
   </ng-template>
 </p-carousel>
